@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="entities.Project" table="projects">
+      <meta attribute="class-description">
+         This class contains the project detail. 
+      </meta>
+      <id name="id" type="int" column="p_id">
+         <generator class="native"/>
+      </id>
+      <property name="name" column="p_name" type="string"/>
+      
+   </class>
+   
+</hibernate-mapping>
